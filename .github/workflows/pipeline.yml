@@ -2,12 +2,15 @@ name: Pipeline
 on: [push, pull_request]
 
 jobs:
-  tests:
-     runs-on: ubuntu-latest
+  test:
+    runs-on: ubuntu-latest
 
-     steps:
-      - name: Roda um comando!
-        run: echo $(pwd)
+    steps:
+      - name: Atualiza o sistema
+        run: apt-get update -y
 
-      - name: Roda outro comando!
+      - name: Copia workspace
+        uses: actions/checkout@v4
+
+      - name: Roda um comando
         run: echo $(ls)
