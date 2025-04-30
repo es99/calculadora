@@ -6,9 +6,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Atualiza o sistema
-        run: apt-get update -y
-
       - name: Copia workspace
         uses: actions/checkout@v4
 
