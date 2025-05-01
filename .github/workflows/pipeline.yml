@@ -23,4 +23,4 @@ jobs:
       - name: Verifica estilo e documentacao do codigo
         run:
           pycodestyle calc.py
-          pydocstyle cal.py
+          pydocstyle calc.py
