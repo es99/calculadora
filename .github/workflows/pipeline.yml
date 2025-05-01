@@ -6,9 +6,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: testes unitarios
-        run: python -m unittest calc.py
-        
+      - name: Executa os testes unitarios
+        run: python -m unittest discover
+
   test:
     runs-on: ubuntu-latest
 
