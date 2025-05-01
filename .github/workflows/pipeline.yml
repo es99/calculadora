@@ -6,8 +6,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Copia workspace
+        uses: actions/checkout@v4
+
+      - name: Instalacao do Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
       - name: Executa os testes unitarios
-        run: python -m unittest discover
+        run: python -m unittest discover -s .
 
   test:
     runs-on: ubuntu-latest
