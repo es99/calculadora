@@ -9,5 +9,7 @@ jobs:
       - name: Copia workspace
         uses: actions/checkout@v4
 
-      - name: Roda um comando
-        run: echo $(ls)
+      - name: Instalacao do Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
