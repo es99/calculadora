@@ -19,3 +19,6 @@ jobs:
 
       - name: Instala o pycodestyle
         run: pip install pycodestyle
+
+      - name: Verify code style
+        run: pycodestyle calc.py
