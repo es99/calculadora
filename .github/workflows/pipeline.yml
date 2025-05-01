@@ -17,8 +17,10 @@ jobs:
       - name: Verifica se o pip está instalado
         run: pip --version
 
-      - name: Instala o pycodestyle
-        run: pip install pycodestyle
+      - name: Instala o pycodestyle e pydocstyle
+        run: pip install pycodestyle pydocstyle
 
-      - name: Verify code style
-        run: pycodestyle calc.py
+      - name: Verifica estilo e documentacao do codigo
+        run:
+          pycodestyle calc.py
+          pydocstyle cal.py
