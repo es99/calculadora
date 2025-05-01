@@ -18,11 +18,11 @@ jobs:
         run: pip --version
 
       - name: Instala o pycodestyle e pydocstyle
-        run: 
+        run: |
           pip install pycodestyle
           pip install pydocstyle
 
       - name: Verifica estilo e documentacao do codigo
-        run:
+        run: |
           pycodestyle calc.py
           pydocstyle calc.py
