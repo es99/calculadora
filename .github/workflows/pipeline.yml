@@ -2,6 +2,13 @@ name: Pipeline
 on: [push, pull_request]
 
 jobs:
+  unittest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: testes unitarios
+        run: python -m unittest calc.py
+        
   test:
     runs-on: ubuntu-latest
 
