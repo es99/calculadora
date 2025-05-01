@@ -9,10 +9,10 @@ jobs:
       - name: Copia workspace
         uses: actions/checkout@v4
 
-      - name: Instalacao do Python
+      - name: Instalacao do Python 3.11
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.11'
 
       - name: Verifica se o pip está instalado
         run: pip --version
